@@ -51,12 +51,12 @@ public class TextFileNumber {
 			
 			String [] data = line.trim().split(","); // 파일 안의 데이터를 ,를 기준으로 쪼개서 각각의 변수에 담고
 			// ZIPCODE,SIDO,GUGUN,DONG,BUNJI,SEQ
-			String zipcode = data[0];
-			String sido    = data[1];
-			String gugun   = data[2];
-			String dong    = data[3];
-			String bunji   = data[4];
-			String seq     = data[5];
+			String zipcode = data[0].trim();
+			String sido    = data[1].trim();
+			String gugun   = data[2].trim();
+			String dong    = data[3].trim();
+			String bunji   = data[4].trim();
+			String seq     = data[5].trim();
 			
 			if( dong.indexOf(sea) != -1 ) { // 내가 콘솔창에 입력한 dong 이 자료의 정보와 일치하는지 보고 일치하면 아래 printf 의 규칙에 따라 출력한다.
 				System.out.printf("%s %s %s %s %s %s ", zipcode, sido, gugun, dong, bunji, seq );
