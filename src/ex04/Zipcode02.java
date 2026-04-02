@@ -22,7 +22,7 @@ public class Zipcode02 {
 		
 		String         title = br.readLine(); // 제목줄 스킵
 		String         line  = "";
-		String         bsido = "시도";
+		String         bsido = "";
 		
 		
 		
@@ -41,9 +41,10 @@ public class Zipcode02 {
 //			   부산
 //			   ... 
 //			   충북
-			
-			if(sido.indexOf(bsido) == -1) {
-				System.out.println("새로운 시도 : " + sido);
+			int sidocou = 0;
+			// if(sido.indexOf(bsido) == -1) {
+			if( !sido.equals(bsido) ) {
+				System.out.println("새로운 시도 : " + sido + " 개수: " + sidocou);
 				bsido = sido;
 				cnt++;
 			}
