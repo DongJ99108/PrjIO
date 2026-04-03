@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashSet;
 
-public class Zipcode05 {
+public class Zipcode05_1 {
 
 	public static void main(String[] args) throws Throwable { // void 쓰는이유 - return 이 없어서
 //		4. 한국의 시도명 출력 - 17건 
@@ -14,7 +14,7 @@ public class Zipcode05 {
 //		   부산
 //		   ... 
 //		   충북
-		String     path      = Zipcode05.class.getResource("").getPath();
+		String     path      = Zipcode05_1.class.getResource("").getPath();
 		String     fname     = "zipcode_utf8.csv";
 		File       inFile    = new File(path + fname);
 		
